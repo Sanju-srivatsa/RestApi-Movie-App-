@@ -30,7 +30,7 @@ export const updatemovie =  (req,res) => {
     const movie = movies.find((movie) => movie.id === req.params.id);
     
     movie.moviename = req.body.moviename;
-    movie.age = req.body.age;
+    movie.year = req.body.year;
 
     console.log(`moviename has been updated to ${req.body.moviename}.age has been updated to ${req.body.age}`)
 };
